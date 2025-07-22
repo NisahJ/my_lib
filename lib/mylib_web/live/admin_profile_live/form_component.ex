@@ -69,19 +69,5 @@ defmodule MylibWeb.AdminProfileLive.FormComponent do
     end
   end
 
-  defp save_admin_profile(socket, :new, admin_profile_params) do
-    case Office.create_admin_profile(admin_profile_params) do
-      {:ok, admin_profile} ->
-        notify_parent({:saved, admin_profile})
-
-        {:noreply,
-         socket
-         |> put_flash(:info, "Admin profile created successfully")
-         |> push_patch(to: socket.assigns.patch)}
-
-      {:error, %Ecto.Changeset{} = changeset} ->
-        {:noreply, assign(socket, form: to_form(changeset))}
-    end
-  end
   defp notify_parent(msg), do: send(self(), {__MODULE__, msg})
 end
