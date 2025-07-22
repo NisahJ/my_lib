@@ -15,6 +15,7 @@ defmodule MylibWeb.AdminProfileLive.Index do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
   defp apply_action(socket, :edit, %{"id" => id}) do
@@ -26,6 +27,8 @@ defmodule MylibWeb.AdminProfileLive.Index do
 =======
 >>>>>>> af1d9cc (new update)
 >>>>>>> 376403e (new update)
+=======
+>>>>>>> 83d8149 (update)
   defp apply_action(socket, :new, _params) do
     socket
     |> assign(:page_title, "New Admin profile")
@@ -43,6 +46,7 @@ defmodule MylibWeb.AdminProfileLive.Index do
     {:noreply, stream_insert(socket, :admin_profiles, admin_profile)}
   end
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 
@@ -56,4 +60,6 @@ defmodule MylibWeb.AdminProfileLive.Index do
 =======
 >>>>>>> af1d9cc (new update)
 >>>>>>> 376403e (new update)
+=======
+>>>>>>> 83d8149 (update)
 end

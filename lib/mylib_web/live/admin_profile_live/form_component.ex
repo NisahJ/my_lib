@@ -1,5 +1,6 @@
 defmodule MylibWeb.AdminProfileLive.FormComponent do
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <<<<<<< HEAD
@@ -7,6 +8,9 @@ defmodule MylibWeb.AdminProfileLive.FormComponent do
 
 >>>>>>> af1d9cc (new update)
 >>>>>>> 376403e (new update)
+=======
+
+>>>>>>> 83d8149 (update)
   use MylibWeb, :live_component
 
   alias Mylib.Office
@@ -29,6 +33,7 @@ defmodule MylibWeb.AdminProfileLive.FormComponent do
       >
         <.input field={@form[:full_name]} type="text" label="Full name" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
         <.input field={@form[:ic]} type="text" label="Ic" />
@@ -37,14 +42,19 @@ defmodule MylibWeb.AdminProfileLive.FormComponent do
         <.input field={@form[:address]} type="text" label="Address" />
 =======
 >>>>>>> 376403e (new update)
+=======
+>>>>>>> 83d8149 (update)
         <.input field={@form[:ic]} type="text" label="Ic" placeholder="123456789012" required/>
         <.input field={@form[:status]} type="select" label="Status" options={[{"Active", "active"}, {"Inactive", "inactive"}, {"Pending", "pending"}]} required/>
         <.input field={@form[:phone]} type="text" label="Phone" placeholder="+60123456789"/>
         <.input field={@form[:address]} type="textarea" label="Address" rows="3"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> af1d9cc (new update)
 >>>>>>> 376403e (new update)
+=======
+>>>>>>> 83d8149 (update)
         <.input field={@form[:date_of_birth]} type="date" label="Date of birth" />
         <:actions>
           <.button phx-disable-with="Saving...">Save Admin profile</.button>
@@ -90,6 +100,7 @@ defmodule MylibWeb.AdminProfileLive.FormComponent do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
   defp save_admin_profile(socket, :new, admin_profile_params) do
@@ -110,5 +121,7 @@ defmodule MylibWeb.AdminProfileLive.FormComponent do
 =======
 >>>>>>> af1d9cc (new update)
 >>>>>>> 376403e (new update)
+=======
+>>>>>>> 83d8149 (update)
   defp notify_parent(msg), do: send(self(), {__MODULE__, msg})
 end
