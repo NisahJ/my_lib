@@ -4,10 +4,23 @@ defmodule Mylib.Office do
   """
 
   import Ecto.Query, warn: false
+<<<<<<< HEAD
 
   alias Mylib.Office.{Admin, AdminToken, AdminNotifier}
   alias Mylib.Repo
   alias Mylib.Office.AdminProfile
+=======
+<<<<<<< HEAD
+  alias Mylib.Repo
+
+  alias Mylib.Office.{Admin, AdminToken, AdminNotifier}
+=======
+
+  alias Mylib.Office.{Admin, AdminToken, AdminNotifier}
+  alias Mylib.Repo
+  alias Mylib.Office.AdminProfile
+>>>>>>> af1d9cc (new update)
+>>>>>>> 376403e (new update)
   ## Database getters
 
   @doc """
@@ -60,8 +73,16 @@ defmodule Mylib.Office do
   """
   def get_admin!(id), do: Repo.get!(Admin, id)
 
+<<<<<<< HEAD
   def get_admin_profile!(id), do: Repo.get!(AdminProfile, id)
 
+=======
+<<<<<<< HEAD
+=======
+  def get_admin_profile!(id), do: Repo.get!(AdminProfile, id)
+
+>>>>>>> af1d9cc (new update)
+>>>>>>> 376403e (new update)
   ## Admin registration
 
   @doc """

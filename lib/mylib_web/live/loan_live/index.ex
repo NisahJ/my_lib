@@ -34,7 +34,14 @@ defmodule MylibWeb.LoanLive.Index do
 
   @impl true
   def handle_info({MylibWeb.LoanLive.FormComponent, {:saved, loan}}, socket) do
+<<<<<<< HEAD
     loan = Library.get_loan!(loan.id, preload: [:user, :book])
+=======
+<<<<<<< HEAD
+=======
+    loan = Library.get_loan!(loan.id, preload: [:user, :book])
+>>>>>>> af1d9cc (new update)
+>>>>>>> 376403e (new update)
     {:noreply, stream_insert(socket, :loans, loan)}
   end
 

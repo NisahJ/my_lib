@@ -76,6 +76,32 @@ defmodule MylibWeb.AdminSettingsLive do
     {:noreply, assign(socket, :email_form, to_form(changeset, as: "email"))}
   end
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  def handle_event("update_email", %{"email" => params}, socket) do
+    current_admin = socket.assigns.current_admin
+
+    case Office.update_admin_email(current_admin, params) do
+      {:ok, admin} ->
+        changeset = Admin.email_changeset(admin, %{})
+        form = to_form(changeset, as: "email")
+
+        socket =
+          socket
+          |> put_flash(:info, "Email updated successfully")
+          |> assign(:email_form, form)
+
+        {:noreply, socket}
+
+      {:error, changeset} ->
+        {:noreply, assign(socket, :email_form, to_form(changeset, as: "email"))}
+    end
+  end
+
+=======
+>>>>>>> af1d9cc (new update)
+>>>>>>> 376403e (new update)
   def handle_event("validate_password", %{"password" => params}, socket) do
     changeset =
       socket.assigns.current_admin
@@ -84,4 +110,30 @@ defmodule MylibWeb.AdminSettingsLive do
 
     {:noreply, assign(socket, :password_form, to_form(changeset, as: "password"))}
   end
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+  def handle_event("update_password", %{"password" => params}, socket) do
+    current_admin = socket.assigns.current_admin
+
+    case Office.update_admin_password(current_admin, params) do
+      {:ok, admin} ->
+        changeset = Admin.password_changeset(admin, %{})
+        form = to_form(changeset, as: "password")
+
+        socket =
+          socket
+          |> put_flash(:info, "Password updated successfully")
+          |> assign(:password_form, form)
+
+        {:noreply, socket}
+
+      {:error, changeset} ->
+        {:noreply, assign(socket, :password_form, to_form(changeset, as: "password"))}
+    end
+  end
+=======
+>>>>>>> af1d9cc (new update)
+>>>>>>> 376403e (new update)
 end

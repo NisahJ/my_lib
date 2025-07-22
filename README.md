@@ -17,6 +17,15 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
 # my_lib
+<<<<<<< HEAD
 
 
 Latihan 22/07/2025
+=======
+<<<<<<< HEAD
+=======
+
+
+Latihan 22/07/2025
+>>>>>>> af1d9cc (new update)
+>>>>>>> 376403e (new update)
