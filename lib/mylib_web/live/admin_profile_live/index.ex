@@ -14,21 +14,12 @@ defmodule MylibWeb.AdminProfileLive.Index do
     {:noreply, apply_action(socket, socket.assigns.live_action, params)}
   end
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
   defp apply_action(socket, :edit, %{"id" => id}) do
     socket
     |> assign(:page_title, "Edit Admin profile")
     |> assign(:admin_profile, Office.get_admin_profile!(id))
   end
 
-=======
->>>>>>> af1d9cc (new update)
->>>>>>> 376403e (new update)
-=======
->>>>>>> 83d8149 (update)
   defp apply_action(socket, :new, _params) do
     socket
     |> assign(:page_title, "New Admin profile")
@@ -45,10 +36,6 @@ defmodule MylibWeb.AdminProfileLive.Index do
   def handle_info({MylibWeb.AdminProfileLive.FormComponent, {:saved, admin_profile}}, socket) do
     {:noreply, stream_insert(socket, :admin_profiles, admin_profile)}
   end
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
   @impl true
   def handle_event("delete", %{"id" => id}, socket) do
@@ -57,9 +44,4 @@ defmodule MylibWeb.AdminProfileLive.Index do
 
     {:noreply, stream_delete(socket, :admin_profiles, admin_profile)}
   end
-=======
->>>>>>> af1d9cc (new update)
->>>>>>> 376403e (new update)
-=======
->>>>>>> 83d8149 (update)
 end

@@ -56,19 +56,7 @@ defmodule Mylib.Office.Admin do
   defp validate_password(changeset, opts) do
     changeset
     |> validate_required([:password])
-<<<<<<< HEAD
-<<<<<<< HEAD
     |> validate_length(:password, min: 8, max: 72)
-=======
-<<<<<<< HEAD
-    |> validate_length(:password, min: 12, max: 72)
-=======
-    |> validate_length(:password, min: 8, max: 72)
->>>>>>> af1d9cc (new update)
->>>>>>> 376403e (new update)
-=======
-    |> validate_length(:password, min: 8, max: 72)
->>>>>>> 1b032a1 (update)
     # Examples of additional password validation:
     # |> validate_format(:password, ~r/[a-z]/, message: "at least one lower case character")
     # |> validate_format(:password, ~r/[A-Z]/, message: "at least one upper case character")
