@@ -77,8 +77,11 @@ defmodule MylibWeb.AdminSettingsLive do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 1b032a1 (update)
   def handle_event("update_email", %{"email" => params}, socket) do
     current_admin = socket.assigns.current_admin
 
@@ -99,9 +102,12 @@ defmodule MylibWeb.AdminSettingsLive do
     end
   end
 
+<<<<<<< HEAD
 =======
 >>>>>>> af1d9cc (new update)
 >>>>>>> 376403e (new update)
+=======
+>>>>>>> 1b032a1 (update)
   def handle_event("validate_password", %{"password" => params}, socket) do
     changeset =
       socket.assigns.current_admin
@@ -111,8 +117,11 @@ defmodule MylibWeb.AdminSettingsLive do
     {:noreply, assign(socket, :password_form, to_form(changeset, as: "password"))}
   end
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 1b032a1 (update)
 
   def handle_event("update_password", %{"password" => params}, socket) do
     current_admin = socket.assigns.current_admin
@@ -133,7 +142,10 @@ defmodule MylibWeb.AdminSettingsLive do
         {:noreply, assign(socket, :password_form, to_form(changeset, as: "password"))}
     end
   end
+<<<<<<< HEAD
 =======
 >>>>>>> af1d9cc (new update)
 >>>>>>> 376403e (new update)
+=======
+>>>>>>> 1b032a1 (update)
 end
