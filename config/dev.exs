@@ -3,15 +3,7 @@ import Config
 # Configure your database
 config :mylib, Mylib.Repo,
   username: "postgres",
-<<<<<<< HEAD
   password: "123456789",
-=======
-<<<<<<< HEAD
-  password: "123",
-=======
-  password: "123456789",
->>>>>>> af1d9cc (new update)
->>>>>>> 376403e (new update)
   hostname: "localhost",
   database: "mylib_dev",
   stacktrace: true,
